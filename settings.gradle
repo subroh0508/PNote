@@ -1,1 +1,6 @@
 include ':app'
+
+def modulesDir = new File('modules')
+
+include ':auth'
+project(':auth').projectDir = new File(modulesDir, 'auth')
