@@ -1,0 +1,25 @@
+ext.dep = [
+        kotlin: [
+                stdlib: 'org.jetbrains.kotlin:kotlin-stdlib:1.2.71',
+                reflect: 'org.jetbrains.kotlin:kotlin-reflect:1.2.71',
+                test: 'org.jetbrains.kotlin:kotlin-test:1.2.71',
+        ],
+        jetpack: [
+                core: 'androidx.core:core:1.0.0',
+                ktx: 'androidx.core:core-ktx:1.0.0',
+                appcompat: 'androidx.appcompat:appcompat:1.0.0',
+                fragment: 'androidx.fragment:fragment:1.0.0',
+                preference: 'androidx.preference:preference:1.0.0',
+                cardView: 'androidx.cardview:cardview:1.0.0',
+                recyclerView: 'androidx.recyclerview:recyclerview:1.0.0',
+                material: 'com.google.android.material:material:1.0.0',
+                vectorDrawable: 'androidx.vectordrawable:vectordrawable-animated:1.0.0',
+                constraintLayout: 'androidx.constraintlayout:constraintlayout:2.0.0-alpha2',
+                lifecycle: [
+                        runtime: 'androidx.lifecycle:lifecycle-runtime:2.0.0',
+                        extensions: 'androidx.lifecycle:lifecycle-extensions:2.0.0',
+                        compiler: 'androidx.lifecycle:lifecycle-compiler:2.0.0',
+                ],
+                test: 'androidx.test:runner:1.1.0-alpha4',
+        ],
+]
