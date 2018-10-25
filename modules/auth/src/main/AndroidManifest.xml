@@ -1,2 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="net.subroh0508.pnote.auth"/>
+          package="net.subroh0508.pnote.auth">
+    <application>
+        <activity android:name=".presentation.AuthActivity"/>
+    </application>
+</manifest>

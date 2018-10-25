@@ -1,4 +1,6 @@
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion versions.compileSdk
@@ -10,7 +12,6 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
     }
 
     buildTypes {
@@ -33,4 +34,7 @@ dependencies {
     implementation dep.jetpack.appcompat
     implementation dep.jetpack.constraintLayout
     implementation dep.jetpack.lifecycle.extensions
+    implementation dep.jetpack.material
+    implementation dep.firebase.core
+    implementation dep.firebase.auth
 }

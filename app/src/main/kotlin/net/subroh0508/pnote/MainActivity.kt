@@ -1,7 +1,9 @@
 package net.subroh0508.pnote
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import net.subroh0508.pnote.auth.presentation.AuthActivity
 import net.subroh0508.pnote.ui.main.MainFragment
 
 class MainActivity : AppCompatActivity() {
@@ -14,6 +16,12 @@ class MainActivity : AppCompatActivity() {
                 .replace(R.id.container, MainFragment.newInstance())
                 .commitNow()
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+
+        startActivity(Intent(this, AuthActivity::class.java))
     }
 
 }

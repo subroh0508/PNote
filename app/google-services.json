@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "925272606659",
+    "firebase_url": "https://pnote-40004.firebaseio.com",
+    "project_id": "pnote-40004",
+    "storage_bucket": "pnote-40004.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:925272606659:android:3b65ea55191fb929",
+        "android_client_info": {
+          "package_name": "net.subroh0508.pnote"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "925272606659-hjfpjh2mimick9hg79cm79re0jch33je.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCi_fwmi-a36tZOIibeX5sJ4ikpZe7WXTw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

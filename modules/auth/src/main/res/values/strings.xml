@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">auth</string>
+    <string name="sign_up">初出勤</string>
+    <string name="sign_in">出勤</string>
+    <string name="sign_out">退勤</string>
 </resources>

@@ -35,9 +35,13 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
+    implementation project(':auth')
+
     implementation dep.kotlin.stdlib
 
     implementation dep.jetpack.appcompat
     implementation dep.jetpack.constraintLayout
     implementation dep.jetpack.lifecycle.extensions
 }
+
+apply plugin: 'com.google.gms.google-services'
