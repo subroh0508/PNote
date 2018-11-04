@@ -29,7 +29,11 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
+    implementation project(':common')
+
     implementation dep.kotlin.stdlib
+    implementation dep.kotlin.coroutines.core
+    implementation dep.kotlin.coroutines.android
 
     implementation dep.jetpack.appcompat
     implementation dep.jetpack.constraintLayout

@@ -3,7 +3,7 @@ package net.subroh0508.pnote
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import net.subroh0508.pnote.auth.presentation.AuthActivity
+import net.subroh0508.pnote.auth.presentation.ui.AuthActivity
 import net.subroh0508.pnote.ui.main.MainFragment
 
 class MainActivity : AppCompatActivity() {
