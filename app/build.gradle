@@ -35,6 +35,7 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
+    implementation project(':common')
     implementation project(':auth')
 
     implementation dep.kotlin.stdlib
