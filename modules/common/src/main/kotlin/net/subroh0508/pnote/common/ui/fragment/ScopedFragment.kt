@@ -1,13 +1,13 @@
-package net.subroh0508.pnote.common
+package net.subroh0508.pnote.common.ui.fragment
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlin.coroutines.CoroutineContext
 
-abstract class ScopedActivity : AppCompatActivity(), CoroutineScope {
+abstract class ScopedFragment : Fragment(), CoroutineScope {
     lateinit var job: Job
 
     override val coroutineContext: CoroutineContext
@@ -16,7 +16,6 @@ abstract class ScopedActivity : AppCompatActivity(), CoroutineScope {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        Dispatchers
         job = Job()
     }
 
