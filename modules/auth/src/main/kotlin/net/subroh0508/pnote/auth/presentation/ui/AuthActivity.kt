@@ -14,7 +14,7 @@ import net.subroh0508.pnote.auth.infra.api.FirebaseApiImpl
 import net.subroh0508.pnote.auth.infra.repository.FirebaseAuthRepository
 import net.subroh0508.pnote.auth.presentation.AuthContract
 import net.subroh0508.pnote.auth.presentation.presenter.AuthPresenter
-import net.subroh0508.pnote.common.ScopedActivity
+import net.subroh0508.pnote.common.ui.activity.ScopedActivity
 
 class AuthActivity : ScopedActivity(), AuthContract.View {
     internal lateinit var presenter: AuthPresenter
