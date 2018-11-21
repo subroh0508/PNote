@@ -5,6 +5,7 @@ import android.view.View
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.auth_activity.*
+import kotlinx.coroutines.launch
 import net.subroh0508.pnote.auth.R
 import net.subroh0508.pnote.auth.domain.entity.User
 import net.subroh0508.pnote.auth.domain.usecase.UserSignInUseCaseImpl
@@ -42,9 +43,21 @@ class AuthActivity : ScopedActivity(), AuthContract.View {
 
         setPresenter()
 
-        signIn.setOnClickListener { presenter.onClickSignIn(email.text.toString(), password.text.toString()) }
-        signUp.setOnClickListener { presenter.onClickSignUp(email.text.toString(), password.text.toString()) }
-        signOut.setOnClickListener { presenter.onClickSignOut() }
+        signIn.setOnClickListener {
+            launch {
+                presenter.onClickSignIn(email.text.toString(), password.text.toString())
+            }
+        }
+        signUp.setOnClickListener {
+            launch {
+                presenter.onClickSignUp(email.text.toString(), password.text.toString())
+            }
+        }
+        signOut.setOnClickListener {
+            launch {
+                presenter.onClickSignOut()
+            }
+        }
     }
 
     override fun onSuccess(user: User) {
