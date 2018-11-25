@@ -39,10 +39,14 @@ dependencies {
     implementation project(':auth')
 
     implementation dep.kotlin.stdlib
+    implementation dep.kotlin.coroutines.core
+    implementation dep.kotlin.coroutines.android
 
     implementation dep.jetpack.appcompat
     implementation dep.jetpack.constraintLayout
     implementation dep.jetpack.lifecycle.extensions
+    implementation dep.firebase.core
+    implementation dep.firebase.auth
 }
 
 apply plugin: 'com.google.gms.google-services'

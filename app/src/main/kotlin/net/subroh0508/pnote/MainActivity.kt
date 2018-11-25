@@ -4,7 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import net.subroh0508.pnote.auth.presentation.ui.AuthActivity
-import net.subroh0508.pnote.ui.main.MainFragment
+import net.subroh0508.pnote.presentation.ui.MainFragment
+
 
 class MainActivity : AppCompatActivity() {
 
